@@ -41,17 +41,7 @@
           </svg>
           +7 951 795 93 69
         </a>
-
-        <button class="header__cart" aria-label="Корзина">
-          <svg class="header__cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="9" cy="21" r="1" />
-            <circle cx="20" cy="21" r="1" />
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-          </svg>
-          <span class="header__cart-badge">0</span>
-        </button>
-
+        <a href="#form" class="btn btn-dark">Оставить заявку</a>
       </div>
     </div>
   </header>
@@ -456,8 +446,7 @@
           <!-- Карточка 06 -->
           <article class="why-card">
             <div class="why-card__header">
-              <svg class="why-card__icon" width="482" height="461" viewBox="0 0 482 461" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="why-card__icon" width="482" height="461" viewBox="0 0 482 461" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M350.967 2.39943C360.718 -0.38492 371.001 -0.751804 380.926 1.32912L385.045 2.1924C403.205 6.00007 418.197 18.7536 424.867 36.0684C428.652 45.8932 429.522 56.6016 427.371 66.9082L426.233 72.3594C423.161 87.0858 415.649 100.517 404.709 110.844L399.765 115.51L399.604 115.661H449L449.852 115.672C467.683 116.124 482 130.72 482 148.661V232.661H453V427.661L452.989 428.513C452.545 446.062 438.4 460.206 420.852 460.65L420 460.661H66C47.7746 460.661 33 445.887 33 427.661V232.661H0V148.661L0.0107422 147.81C0.462419 129.978 15.0593 115.661 33 115.661H82.5615L79.4316 112.645C69.0186 102.611 61.8933 89.6548 58.9971 75.4873L57.9189 70.2158C55.9209 60.4414 56.7304 50.3009 60.2529 40.9668C66.6008 24.1462 81.0631 11.705 98.6436 7.9424L101.873 7.25099C111.416 5.20869 121.317 5.56906 130.686 8.29982L141.484 11.4473C154.74 15.3111 167.089 21.7897 177.803 30.5L196.253 45.499C201.466 49.7374 206.316 54.4042 210.752 59.4502L236.216 88.4151L265.429 55.8633C270.097 50.6611 275.192 45.8576 280.659 41.5029L300.48 25.7158C311.98 16.5569 325.178 9.76407 339.314 5.72755L350.967 2.39943ZM259 426.661H419V241.661H259V426.661ZM67 426.661H223V241.661H67V426.661ZM259 198.661H448V149.661H259V198.661ZM34 198.661H223V149.661H34V198.661ZM121.172 40.9414C117.21 39.7867 113.023 39.6345 108.988 40.4981L105.76 41.1895C99.4878 42.5318 94.3273 46.9699 92.0625 52.9707C90.8058 56.3008 90.5176 59.9191 91.2305 63.4063L92.3076 68.6777C93.8262 76.1064 97.5624 82.9001 103.022 88.1611L106.892 91.8887L108.71 93.3477C121.94 103.966 137.73 110.919 154.495 113.511L160.538 114.445C165.108 115.152 169.752 115.24 174.346 114.707L210.385 110.528L185.217 81.8994C182.031 78.2758 178.548 74.9245 174.805 71.8809L156.354 56.8809C149.161 51.0328 140.87 46.684 131.97 44.0899L121.172 40.9414ZM373.948 34.6055C369.428 33.6577 364.744 33.8246 360.303 35.0928L348.649 38.4209C338.826 41.226 329.654 45.9468 321.663 52.3115L301.841 68.0986C297.853 71.2745 294.138 74.7774 290.733 78.5713L262.512 110.021L303.394 114.663C308.375 115.229 313.409 115.135 318.365 114.385L324.955 113.387C343.312 110.607 360.634 103.113 375.229 91.6377L376.986 90.2559L381.37 86.1192C387.256 80.5635 391.297 73.3369 392.95 65.4141L394.088 59.9629C394.902 56.062 394.573 52.0086 393.141 48.2901C390.616 41.7367 384.941 36.9099 378.067 35.4688L373.948 34.6055Z"
                   fill="#FF1093" />
@@ -813,102 +802,6 @@
 
   </main>
   <script src="script.js"></script>
-
-
-  <!-- Toast-уведомление -->
-<div class="toast" id="toast">
-  <img 
-    class="toast__image" 
-    src="https://placehold.co/80x80/D4F35A/1A0B1E?text=Эклер" 
-    alt="Добавленный товар"
-  >
-  <div class="toast__content">
-    <span class="toast__title">В корзине</span>
-    <span class="toast__text">Малина-фисташка</span>
-  </div>
-  <button class="toast__close" aria-label="Закрыть уведомление">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="18" y1="6" x2="6" y2="18"/>
-      <line x1="6" y1="6" x2="18" y2="18"/>
-    </svg>
-  </button>
-</div>
-
-
-
-<!-- Overlay (затемнение фона) -->
-<div class="cart-overlay" id="cartOverlay"></div>
-
-<!-- Панель корзины -->
-<aside class="cart-drawer" id="cartDrawer" aria-label="Корзина">
-  <div class="cart-drawer__header">
-    <h3 class="cart-drawer__title">Корзина</h3>
-    <button class="cart-drawer__close" aria-label="Закрыть корзину">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="18" y1="6" x2="6" y2="18"/>
-        <line x1="6" y1="6" x2="18" y2="18"/>
-      </svg>
-    </button>
-  </div>
-
-  <div class="cart-drawer__body">
-    <!-- Пустая корзина (показывается когда нет товаров) -->
-    <div class="cart-drawer__empty">
-      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="9" cy="21" r="1"/>
-        <circle cx="20" cy="21" r="1"/>
-        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-      </svg>
-      <p class="cart-drawer__empty-text">Корзина пуста</p>
-      <p class="cart-drawer__empty-subtext">Добавьте эклеры, чтобы оформить заказ</p>
-    </div>
-
-    <!-- Список товаров (скрыт по умолчанию) -->
-    <div class="cart-drawer__items" style="display: none;">
-      <!-- Пример товара (потом будет динамическим) -->
-      <div class="cart-item">
-        <img 
-          class="cart-item__image" 
-          src="https://placehold.co/80x80/D4F35A/1A0B1E?text=Эклер" 
-          alt="Малина-фисташка"
-        >
-        <div class="cart-item__info">
-          <span class="cart-item__name">Малина-фисташка</span>
-          <span class="cart-item__price">от 220 ₽</span>
-        </div>
-        <div class="cart-item__controls">
-          <button class="cart-item__btn cart-item__btn--minus" aria-label="Уменьшить количество">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-              <line x1="5" y1="12" x2="19" y2="12"/>
-            </svg>
-          </button>
-          <span class="cart-item__count">1</span>
-          <button class="cart-item__btn cart-item__btn--plus" aria-label="Увеличить количество">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-              <line x1="12" y1="5" x2="12" y2="19"/>
-              <line x1="5" y1="12" x2="19" y2="12"/>
-            </svg>
-          </button>
-          <button class="cart-item__remove" aria-label="Удалить товар">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="3 6 5 6 21 6"/>
-              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="cart-drawer__footer" style="display: none;">
-    <div class="cart-drawer__total">
-      <span class="cart-drawer__total-label">Итого</span>
-      <span class="cart-drawer__total-price">220 ₽</span>
-    </div>
-    <a href="#form" class="btn btn-dark cart-drawer__checkout">Оформить заказ</a>
-  </div>
-</aside>
-
 </body>
 
 </html>
