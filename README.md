@@ -82,9 +82,9 @@ yamicon-landing/
 ## 👩‍💻 Автор
 
 Яна
-![GitHub: @anavakarina](https://github.com/anavakarina)
-Email: anavakarina8@gmail.com
-![Telegram: @Hygygysha](https://t.me/Hygygysha)
+- [GitHub: @anavakarina](https://github.com/anavakarina)
+- Email: anavakarina8@gmail.com
+- [Telegram: @Hygygysha](https://t.me/Hygygysha)
 
 
 
