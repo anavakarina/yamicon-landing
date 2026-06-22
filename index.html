@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YAMICON — Эклеры на заказ</title>
-  <meta name="description" content="Авторские эклеры на заказ для корпоративов, свадеб и праздников. 20+ вкусов, доставка точно ко времени, печём в день события. Оставьте заявку!">
+  <meta name="description"
+    content="Авторские эклеры на заказ для корпоративов, свадеб и праздников. 20+ вкусов, доставка точно ко времени, печём в день события. Оставьте заявку!">
   <link rel="icon" type="image/png" href="img/favicon.png">
 
 
@@ -24,7 +25,13 @@
         <span class="logo__text">YAMI<br>CON</span>
       </a>
 
-      
+        <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
 
       <nav class="nav" aria-label="Главная навигация">
         <ul class="nav__list">
@@ -123,16 +130,17 @@
 
         <div class="hero__image">
           <div class="hero__circle"></div>
-          <img class="hero__photo" src="img/eclair-hero.png"
-            alt="Авторские эклеры с фисташкой и малиной" width="606" height="463">
+          <img class="hero__photo" src="img/eclair-hero.png" alt="Авторские эклеры с фисташкой и малиной" width="606"
+            height="463">
           <span class="sticker sticker--yum">yum!</span>
           <span class="sticker sticker--fresh">фреш ✦</span>
         </div>
       </div>
     </section>
-    
 
-    <!-- БЕГУЩАЯ СТРОКА -->
+
+
+    <!-- БЕГУЩАЯ СТРОКА  -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__content">
         дерзкие вкусы ✦ авторские рецепты ✦ доставка ко времени ✦ 20+ вкусов
@@ -159,8 +167,7 @@
           </div>
 
           <div class="about__image">
-            <img class="about__photo" src="img/process.png"
-              alt="Процесс приготовления эклеров" >
+            <img class="about__photo" src="img/process.png" alt="Процесс приготовления эклеров">
           </div>
         </div>
 
@@ -188,13 +195,13 @@
 
 
 
-    <!-- НАШИ ЭКЛЕРЫ -->
+    <!-- НАШИ ЭКЛЕРЫ   -->
     <section class="eclairs" id="eclairs">
       <div class="container">
         <span class="section-label">НАШИ ЭКЛЕРЫ</span>
         <h2 class="section-title">Выбирайте вкус — мы сделаем остальное</h2>
 
-        
+
         <div class="filters" role="tablist" aria-label="Фильтр вкусов">
           <button class="filter-btn filter-btn--active" data-filter="all">Все</button>
           <button class="filter-btn" data-filter="classic">Классика</button>
@@ -203,11 +210,11 @@
           <button class="filter-btn" data-filter="chocolate">Шоколадные</button>
         </div>
 
-      
+
         <div class="eclairs__grid">
 
-     
-          <!-- Карточка 1 -->
+
+          <!-- Карточка 1   -->
           <article class="eclair-card" data-category="fruity">
             <div class="eclair-card__image">
               <img src="img/pistachio-raspberry.png" alt="Эклер Малина-фисташка">
@@ -219,13 +226,13 @@
               <p class="eclair-card__description">Свежая малина и фисташка в заварном креме</p>
               <div class="eclair-card__footer">
                 <span class="eclair-card__price">от 220 ₽</span>
-  
+
               </div>
             </div>
           </article>
-         
 
-          <!-- Карточка 2 -->
+
+          <!-- Карточка 2   -->
           <article class="eclair-card" data-category="tropic">
             <div class="eclair-card__image">
               <img src="img/mango-passion-fruit.png" alt="Эклер Манго-маракуйя">
@@ -237,13 +244,13 @@
               <p class="eclair-card__description">Сладкое манго и яркая маракуйя</p>
               <div class="eclair-card__footer">
                 <span class="eclair-card__price">от 220 ₽</span>
-        
+
               </div>
             </div>
           </article>
-         
 
-          <!-- Карточка 3 -->
+
+          <!-- Карточка 3   -->
           <article class="eclair-card" data-category="classic">
             <div class="eclair-card__image">
               <img src="img/vanilla.png" alt="Эклер Ванильный">
@@ -254,17 +261,16 @@
               <p class="eclair-card__description">Мадагаскарская ваниль в заварном креме</p>
               <div class="eclair-card__footer">
                 <span class="eclair-card__price">от 180 ₽</span>
-                
+
               </div>
             </div>
           </article>
-     
 
-          <!-- Карточка 4 -->
+
+          <!-- Карточка 4   -->
           <article class="eclair-card" data-category="chocolate">
             <div class="eclair-card__image">
-              <img src="img/coffee-caramel.png"
-                alt="Эклер Кофейно-карамельный">
+              <img src="img/coffee-caramel.png" alt="Эклер Кофейно-карамельный">
             </div>
             <div class="eclair-card__content">
               <span class="eclair-card__category">ШОКОЛАДНЫЙ</span>
@@ -272,13 +278,13 @@
               <p class="eclair-card__description">Эспрессо и солёная карамель</p>
               <div class="eclair-card__footer">
                 <span class="eclair-card__price">от 200 ₽</span>
-              
+
               </div>
             </div>
           </article>
-         
 
-          <!-- Карточка 5 -->
+
+          <!-- Карточка 5   -->
           <article class="eclair-card" data-category="fruity">
             <div class="eclair-card__image">
               <img src="img/strawberry-eclair.png" alt="Эклер Клубничный">
@@ -289,13 +295,13 @@
               <p class="eclair-card__description">Свежая клубника в нежном креме</p>
               <div class="eclair-card__footer">
                 <span class="eclair-card__price">от 200 ₽</span>
-              
+
               </div>
             </div>
           </article>
-         
 
-          <!-- Карточка 6 -->
+
+          <!-- Карточка 6  -->
           <article class="eclair-card" data-category="classic">
             <div class="eclair-card__image">
               <img src="img/classic-eclair.png" alt="Эклер Классический">
@@ -310,22 +316,22 @@
             </div>
           </article>
         </div>
-        
 
-        
+
+
         <p class="eclairs__footnote">
           * Цены указаны от 1 шт. Стоимость крупного заказа рассчитывается индивидуально — оставьте заявку.
         </p>
-      
 
-        <!-- CTA блок -->
+
+        <!-- CTA блок  -->
         <div class="cta-block">
           <span class="cta-block__text">Не нашли вкус? Сделаем под вас</span>
           <a href="#form" class="btn btn-white">Обсудить заказ</a>
         </div>
       </div>
     </section>
-   
+
 
 
 
@@ -339,7 +345,7 @@
         <h2 class="section-title">Что внутри, кроме крема</h2>
 
         <div class="why__grid">
-        
+
           <!-- Карточка 01 -->
           <article class="why-card">
             <div class="why-card__header">
@@ -355,7 +361,7 @@
             <h3 class="why-card__title">Авторские рецепты</h3>
             <p class="why-card__text">Десерты, которых нет ни у кого. Каждый вкус — наша разработка.</p>
           </article>
-         
+
 
           <!-- Карточка 02 -->
           <article class="why-card">
@@ -372,7 +378,7 @@
             <h3 class="why-card__title">Печём в день</h3>
             <p class="why-card__text">Никаких заготовок впрок — только свежие и ароматные эклеры.</p>
           </article>
-         
+
 
           <!-- Карточка 03 -->
           <article class="why-card">
@@ -389,7 +395,7 @@
             <h3 class="why-card__title">20+ вкусов</h3>
             <p class="why-card__text">От классики до неожиданных сочетаний. Найдём вариант для каждого.</p>
           </article>
-          
+
 
           <!-- Карточка 04 -->
           <article class="why-card">
@@ -406,7 +412,7 @@
             <h3 class="why-card__title">Натуральный состав</h3>
             <p class="why-card__text">Без консервантов и искусственных добавок — 100% натуральный продукт.</p>
           </article>
-          
+
 
           <!-- Карточка 05 -->
           <article class="why-card">
@@ -423,12 +429,13 @@
             <h3 class="why-card__title">Доставка ко времени</h3>
             <p class="why-card__text">Привозим в офис, на площадку или в зал — точно к назначенному часу.</p>
           </article>
-          
+
 
           <!-- Карточка 06 -->
           <article class="why-card">
             <div class="why-card__header">
-              <svg class="why-card__icon" width="482" height="461" viewBox="0 0 482 461" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="why-card__icon" width="482" height="461" viewBox="0 0 482 461" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M350.967 2.39943C360.718 -0.38492 371.001 -0.751804 380.926 1.32912L385.045 2.1924C403.205 6.00007 418.197 18.7536 424.867 36.0684C428.652 45.8932 429.522 56.6016 427.371 66.9082L426.233 72.3594C423.161 87.0858 415.649 100.517 404.709 110.844L399.765 115.51L399.604 115.661H449L449.852 115.672C467.683 116.124 482 130.72 482 148.661V232.661H453V427.661L452.989 428.513C452.545 446.062 438.4 460.206 420.852 460.65L420 460.661H66C47.7746 460.661 33 445.887 33 427.661V232.661H0V148.661L0.0107422 147.81C0.462419 129.978 15.0593 115.661 33 115.661H82.5615L79.4316 112.645C69.0186 102.611 61.8933 89.6548 58.9971 75.4873L57.9189 70.2158C55.9209 60.4414 56.7304 50.3009 60.2529 40.9668C66.6008 24.1462 81.0631 11.705 98.6436 7.9424L101.873 7.25099C111.416 5.20869 121.317 5.56906 130.686 8.29982L141.484 11.4473C154.74 15.3111 167.089 21.7897 177.803 30.5L196.253 45.499C201.466 49.7374 206.316 54.4042 210.752 59.4502L236.216 88.4151L265.429 55.8633C270.097 50.6611 275.192 45.8576 280.659 41.5029L300.48 25.7158C311.98 16.5569 325.178 9.76407 339.314 5.72755L350.967 2.39943ZM259 426.661H419V241.661H259V426.661ZM67 426.661H223V241.661H67V426.661ZM259 198.661H448V149.661H259V198.661ZM34 198.661H223V149.661H34V198.661ZM121.172 40.9414C117.21 39.7867 113.023 39.6345 108.988 40.4981L105.76 41.1895C99.4878 42.5318 94.3273 46.9699 92.0625 52.9707C90.8058 56.3008 90.5176 59.9191 91.2305 63.4063L92.3076 68.6777C93.8262 76.1064 97.5624 82.9001 103.022 88.1611L106.892 91.8887L108.71 93.3477C121.94 103.966 137.73 110.919 154.495 113.511L160.538 114.445C165.108 115.152 169.752 115.24 174.346 114.707L210.385 110.528L185.217 81.8994C182.031 78.2758 178.548 74.9245 174.805 71.8809L156.354 56.8809C149.161 51.0328 140.87 46.684 131.97 44.0899L121.172 40.9414ZM373.948 34.6055C369.428 33.6577 364.744 33.8246 360.303 35.0928L348.649 38.4209C338.826 41.226 329.654 45.9468 321.663 52.3115L301.841 68.0986C297.853 71.2745 294.138 74.7774 290.733 78.5713L262.512 110.021L303.394 114.663C308.375 115.229 313.409 115.135 318.365 114.385L324.955 113.387C343.312 110.607 360.634 103.113 375.229 91.6377L376.986 90.2559L381.37 86.1192C387.256 80.5635 391.297 73.3369 392.95 65.4141L394.088 59.9629C394.902 56.062 394.573 52.0086 393.141 48.2901C390.616 41.7367 384.941 36.9099 378.067 35.4688L373.948 34.6055Z"
                   fill="#FF1093" />
@@ -442,7 +449,7 @@
         </div>
       </div>
     </section>
-    
+
 
 
 
@@ -454,10 +461,10 @@
       <div class="container">
         <span class="section-label">ДЛЯ БИЗНЕСА</span>
         <h2 class="section-title">Решение для любого формата</h2>
-        
+
 
         <div class="business__grid">
-          
+
           <!-- Карточка 1 -->
           <article class="business-card">
             <div class="business-card__header">
@@ -483,7 +490,7 @@
               <span class="tag">Договор</span>
             </div>
           </article>
-          
+
 
 
           <!-- Карточка 2 -->
@@ -513,7 +520,7 @@
               <span class="tag">Кастом-вкусы</span>
             </div>
           </article>
-          
+
           <!-- Карточка 3 -->
           <article class="business-card">
             <div class="business-card__header">
@@ -540,7 +547,7 @@
             </div>
           </article>
         </div>
-         
+
 
         <!-- CTA блок -->
         <div class="business-cta">
@@ -557,7 +564,7 @@
         </div>
       </div>
     </section>
-    
+
 
 
 
@@ -566,41 +573,49 @@
     <section class="reviews" id="reviews">
       <div class="container">
         <span class="section-label">НАМ ДОВЕРЯЮТ</span>
-        
+
         <div class="reviews__header">
           <h2 class="section-title reviews__title">Уже выбрали нас</h2>
-          
-          <!-- Кнопки навигации -->
-          <div class="reviews__nav">
-            <button class="reviews__btn reviews__btn--prev" aria-label="Предыдущий отзыв">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="19" y1="12" x2="5" y2="12"/>
-                <polyline points="12 19 5 12 12 5"/>
-              </svg>
-            </button>
-            <button class="reviews__btn reviews__btn--next" aria-label="Следующий отзыв">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </button>
+ </div>
+
+
+          <!-- Логотипы клиентов -->
+          <div class="clients-bar">
+            <span class="client-name">Технополе</span>
+            <span class="client-name">Северянка</span>
+            <span class="client-name">Событие&Co</span>
+            <span class="client-name">Кофебро</span>
+            <span class="client-name">Маркетлаб</span>
+            <span class="client-name">Гринвуд</span>
           </div>
+       
+
+        <!-- Кнопки навигации -->
+        <div class="reviews__nav">
+          <button class="reviews__btn reviews__btn--prev" aria-label="Предыдущий отзыв">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+          </button>
+          <button class="reviews__btn reviews__btn--next" aria-label="Следующий отзыв">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
         </div>
 
-        <!-- Логотипы клиентов -->
-        <div class="clients-bar">
-          <span class="client-name">Технополе</span>
-          <span class="client-name">Северянка</span>
-          <span class="client-name">Событие&Co</span>
-          <span class="client-name">Кофебро</span>
-          <span class="client-name">Маркетлаб</span>
-          <span class="client-name">Гринвуд</span>
-        </div>
+
+
 
         <!-- Слайдер отзывов -->
         <div class="slider-wrapper">
+
           <div class="slider-track" id="sliderTrack">
-            
+
             <!-- Слайд 1 -->
             <div class="review-slide active">
               <div class="review-slide__image">
@@ -703,7 +718,7 @@
         <p class="contact__subtitle">Уточним детали, рассчитаем стоимость и предложим подходящие вкусы</p>
 
         <div class="contact__grid">
-          
+
           <!-- Форма -->
           <div class="contact__form-wrapper">
             <form class="contact-form" id="orderForm" novalidate>
@@ -766,7 +781,7 @@
               </div>
 
               <button type="submit" class="btn btn-dark contact-form__submit">Отправить заявку</button>
-              
+
 
               <!-- Сообщение об успехе -->
               <div class="contact-form__success" id="successMessage">
@@ -774,11 +789,11 @@
               </div>
             </form>
           </div>
-          
 
-        
+
+
           <div class="contact__sidebar">
-          
+
             <div class="contact-info">
               <h3 class="contact-info__title">Контакты</h3>
               <ul class="contact-info__list">
@@ -837,13 +852,13 @@
         </div>
       </div>
     </section>
-    
+
 
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
-          
+
           <!-- Логотип и описание -->
           <div class="footer__brand">
             <div class="footer__logo">
@@ -853,7 +868,7 @@
               Авторские эклеры для мероприятий и бизнеса. Сочные, дерзкие, фотогеничные.
             </p>
             <div class="footer__socials">
-             
+
               <a href="https://vk.com/1hygygysha" class="social-link social-link--vk" aria-label="VKontakte">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                   <path
@@ -862,7 +877,7 @@
               </a>
             </div>
           </div>
-          
+
 
           <!-- Меню -->
           <div class="footer__column">
@@ -874,7 +889,7 @@
               <li><a href="#reviews" class="footer__link">Отзывы</a></li>
             </ul>
           </div>
-          
+
 
           <!-- Документы -->
           <div class="footer__column">
@@ -885,7 +900,7 @@
               <li><a href="#" class="footer__link">Реквизиты</a></li>
             </ul>
           </div>
-        
+
 
           <!-- Контакты -->
           <div class="footer__column">
@@ -897,7 +912,7 @@
             </ul>
           </div>
         </div>
-    
+
 
 
         <div class="footer__bottom">
@@ -906,7 +921,7 @@
         </div>
       </div>
     </footer>
-  
+
 
 
   </main>

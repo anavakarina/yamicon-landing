@@ -312,6 +312,46 @@ if (filterButtons.length > 0 && eclairCards.length > 0) {
       goToSlide(index);
     });
   });
+
+
+   
+  // BURGER MENU
+
+  const burgerBtn = document.getElementById('burgerBtn');
+  const nav = document.querySelector('.nav');
+  const navLinks = document.querySelectorAll('.nav__link');
+
+  if (burgerBtn && nav) {
+
+    burgerBtn.addEventListener('click', function() {
+      this.classList.toggle('burger--active');
+      nav.classList.toggle('nav--open');
+      
+ 
+      if (nav.classList.contains('nav--open')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        burgerBtn.classList.remove('burger--active');
+        nav.classList.remove('nav--open');
+        document.body.style.overflow = '';
+      });
+    });
+
+
+    document.addEventListener('click', function(e) {
+      if (!nav.contains(e.target) && !burgerBtn.contains(e.target)) {
+        burgerBtn.classList.remove('burger--active');
+        nav.classList.remove('nav--open');
+        document.body.style.overflow = '';
+      }
+    });
+  }
   
 }); 
 
