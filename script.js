@@ -333,7 +333,12 @@ if (filterButtons.length > 0 && eclairCards.length > 0) {
       } else {
         document.body.style.overflow = '';
       }
+
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+this.setAttribute('aria-expanded', !isExpanded);
     });
+
+    
 
     navLinks.forEach(link => {
       link.addEventListener('click', function() {

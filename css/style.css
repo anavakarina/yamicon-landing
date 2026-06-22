@@ -168,11 +168,7 @@ img {
   transform: translateY(-2px);
 }
 
-.btn-secondary {
-  background-color: var(--color-white);
-  color: var(--color-text);
-  border: 2px solid var(--color-text);
-}
+
 
 .btn-secondary:hover {
   background-color: var(--color-text);
@@ -614,7 +610,7 @@ img {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 1;
   transform: scale(1);
 }
@@ -999,6 +995,10 @@ img {
 
 .reviews__btn:hover {
   background-color: var(--color-text);
+  color: var(--color-white);
+}
+.reviews__btn:active {
+  background-color: #b12169;
   color: var(--color-white);
 }
 
@@ -1535,13 +1535,7 @@ img {
   transform: translateY(-3px);
 }
 
-.social-link--telegram {
-  background-color: #26A5E4;
-}
 
-.social-link--instagram {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
 
 .social-link--vk {
   background-color: #0077FF;
@@ -1882,10 +1876,11 @@ img {
     gap: 16px;
   }
 
-  .nav {
-    order: 3;
-    width: 100%;
+  .header{
+    padding: 10px;
   }
+
+
 
   .nav__list {
     justify-content: center;
@@ -2129,18 +2124,14 @@ img {
   }
 
   /* Eclairs */
-  .eclairs__grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .section-title {
     font-size: 32px;
   }
 
   /* Why Us */
-  .why__grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .why-card {
     padding: 20px;
@@ -2151,16 +2142,14 @@ img {
   }
 
   /* Business */
-  .business__grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .business-card:last-child {
     max-width: 100%;
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   /* Contact */
